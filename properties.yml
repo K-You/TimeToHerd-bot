@@ -1,0 +1,6 @@
+timetoherd:
+  url: https://timetoherd.com/
+  country: 'Canada'
+
+discord:
+  hook: DISCORD_WEBHOOK
