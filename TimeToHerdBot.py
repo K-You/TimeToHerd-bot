@@ -16,10 +16,6 @@ class TimeToHerdBot():
     chrome_options.add_argument("--headless")
     self.driver = webdriver.Chrome(options=chrome_options)
 
-    self.id = None
-    self.description = None
-    self.externalId = None
-    self.priority = None
     self.remainingDays = None
 
     with open(r'./properties.yml') as file:
@@ -45,5 +41,4 @@ class TimeToHerdBot():
   def collectValue(self):
     _result = self.driver.find_element_by_xpath("/html/body/div[1]/div/div[2]/div[1]/div[1]/span[1]/span")
     self.remainingDays = _result.text
-    print(self.remainingDays)
     return self.remainingDays
