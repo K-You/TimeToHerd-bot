@@ -1,6 +1,9 @@
 #Project using python3 & venv
 
+`virtualenv timetoherd-bot`
+
 `source timetoherd-bot/bin/activate`
+
 `python3 main.py`
 
 ##Dependencies : 
